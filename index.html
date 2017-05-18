@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,
+maximum-scale=1,user-scalable=no, width=device-width">
+<link rel="manifest" href="manifest.json">
+<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+<link href="lib/ion-md-input/css/ion-md-input.min.css" rel="stylesheet">
+<link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/ionicons.min.css" rel="stylesheet">
+<script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="lib/ionic-material/dist/ionic.material.min.js"></script>
+<script src="lib/ion-md-input/js/ion-md-input.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller1.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCtMmernYEXchdHQUDQuAxo7EILypMdYP8&center=14.826719172997668,120.28305712764748&zoom=19&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0xebe3cd&style=element:labels.text.fill%7Ccolor:0x523735&style=element:labels.text.stroke%7Ccolor:0xf5f1e6&style=feature:administrative%7Celement:geometry.stroke%7Ccolor:0xc9b2a6&style=feature:administrative.land_parcel%7Celement:geometry.stroke%7Ccolor:0xdcd2be&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xae9e90&style=feature:landscape.natural%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x93817c&style=feature:poi.park%7Celement:geometry.fill%7Ccolor:0xa5b076&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x447530&style=feature:road%7Celement:geometry%7Ccolor:0xf5f1e6&style=feature:road.arterial%7Celement:geometry%7Ccolor:0xfdfcf8&style=feature:road.highway%7Celement:geometry%7Ccolor:0xf8c967&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0xe9bc62&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0xe98d58&style=feature:road.highway.controlled_access%7Celement:geometry.stroke%7Ccolor:0xdb8555&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x806b63&style=feature:transit.line%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:transit.line%7Celement:labels.text.fill%7Ccolor:0x8f7d77&style=feature:transit.line%7Celement:labels.text.stroke%7Ccolor:0xebe3cd&style=feature:transit.station%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:water%7Celement:geometry.fill%7Ccolor:0xb9d3c2&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x92998d&size=480x360">
+    </script>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+</head>
+
+<body ng-app="starter">
+<ion-nav-view></ion-nav-view>
+</body>
+</html>

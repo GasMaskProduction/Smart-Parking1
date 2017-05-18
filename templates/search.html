@@ -1,0 +1,38 @@
+<ion-view view-title="Parking Area">
+<ion-content class="padding" style="margin-top: 50px">
+    <div class="list card">
+
+  <div class="item">
+    <h2>Zamora Bldg</h2>
+    <p>Old Hospital Road, Olongapo City</p>
+  </div>
+
+  <div class="item item-image">
+  <div class="madafuker" style="height: 400px">
+    <img src="img/green.png" style="max-width: 15%" alt="area" usemap="#parkarea">
+
+
+  </div>
+  </div>
+
+  <a class="item item-icon-left assertive" href="#">
+    <i class="icon ion-ios-search"></i>
+    <label class="item item-input">
+		<input type="text" placeholder="Search Parking Areas" ng-model="search">
+</label>
+  </a>
+
+</div>
+<div ng-controller='Search'>
+<div class="list">
+<div class="item item-icon-right" ng-repeat="item in items | filter:search">
+<h1><img style="max-width: 35px" src="img/{{item.img}}">{{item.spaceno}}</h1>
+
+<a> {{item.status}}<br>{{item.floor}}</a><i class="icon ion-ios-more" ui-sref="map"></i>
+
+</div>
+</div>		
+</div>
+
+</ion-content>
+</ion-view>

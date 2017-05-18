@@ -1,0 +1,28 @@
+<ion-view view-title="Map">
+    <ion-content>
+    <div class="list card">
+
+  <div class="item">
+    <h2>Pretty Hate Machine</h2>
+    <p>Nine Inch Nails</p>
+  </div>
+
+  <div class="item item-image">
+    <img src="img/area.png">
+  </div>
+
+
+
+</div>
+<div ng-controller='Search'>
+<div class="list">
+<div class="item item-icon-right" ng-repeat="item in items | filter:search">
+<h1><img style="max-width: 35px" src="img/{{item.img}}">{{item.spaceno}}</h1>
+
+<a> {{item.status}}<br>{{item.floor}}</a><i class="icon ion-ios-more" ui-sref="map"></i>
+
+</div>
+</div>    
+</div>
+    </ion-content>
+</ion-view>

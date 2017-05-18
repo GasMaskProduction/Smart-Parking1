@@ -1,0 +1,33 @@
+<ion-view view-title="Login">
+    <ion-content style="background-color: lightblue">
+
+        <div class="hero no-header flat"><a><img src="img/logo.png" style="max-width: 100%;padding-top: 20%"></a>
+            <div class="content" ng-repeat="login in users">
+                <h1 style="color: white">{{users.username}} </h1>
+            </div>
+        </div>
+
+        
+        <div class="list">
+        <form role="form" action="loginconfig.php" method="POST">
+
+            <div class="list list-inset">
+              <label class="item item-input">
+                <input type="text" id="username" placeholder="Username..." required="">
+              </label>
+              <label class="item item-input">
+                <input type="password" id="password" placeholder="Password..." required="">
+              </label>
+            </div>
+            <div class="padding">
+            <button href="#/app/search" class="button button-full button-calm ink">Login</button>       
+            <button ui-sref="register" class="button button-full button-calm ink">Register</button>  
+            </div>
+  
+        </form>
+
+        </div>
+
+</ion-list>
+    </ion-content>
+</ion-view>
