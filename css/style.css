@@ -6,10 +6,11 @@ html, body {
   height: 100%;
   margin: 0;
 }
-.madafuker{
+.mad{
 background-image: url(../img/area.png);
 background-size: cover;
 background-position: center;
 position: static;
 padding-top: 10%;
+height: 400px;
 }

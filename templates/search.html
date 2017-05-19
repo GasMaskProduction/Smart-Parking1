@@ -7,9 +7,10 @@
     <p>Old Hospital Road, Olongapo City</p>
   </div>
 
-  <div class="item item-image">
-  <div class="madafuker" style="height: 400px">
-    <img src="img/green.png" style="max-width: 15%" alt="area" usemap="#parkarea">
+  <div class="item item-image" ng-repeat="item in items">
+  <div class="mad">
+    <img src="img/{{item.img}}" style="max-width: 21%; margin-left: 2%; margin-top: 9.5%;" alt="area" usemap="#parkarea">
+    <h2 style="margin-top: -10%; margin-left: 5%;">{{item.status}}</h2>
 
 
   </div>

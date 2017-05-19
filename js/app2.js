@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app', ['ngRoute', 'ngCookies'])
+        .module('stater', ['ngRoute', 'ngCookies'])
         .config(config)
         .run(run);
 
@@ -25,7 +25,7 @@
             .when('register',{
               controller: 'RegisterController',
               url: '/register',
-              templateUrl: 'templates/register.html'
+              templateUrl: 'templates/register.html',
               controllerAs: 'vm'
                 })
 
